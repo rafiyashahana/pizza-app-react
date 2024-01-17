@@ -1,0 +1,7 @@
+.container {
+  height: 80vh;
+  background-image: url("../../assets/images/slide1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

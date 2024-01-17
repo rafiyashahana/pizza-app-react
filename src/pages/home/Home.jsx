@@ -1,5 +1,4 @@
-import Navbar from "../../components/navbar/Navbar";
-import Hero from "../../components/hero/Hero";
+import Header from "../../components/header/Header";
 import About from "../../components/about/About";
 import Contact from "../../components/contact/Contact";
 import BestSeller from "../../components/bestSeller/BestSeller";
@@ -7,8 +6,7 @@ import BestSeller from "../../components/bestSeller/BestSeller";
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      <Header />
       <BestSeller />
       <About />
       <Contact />
