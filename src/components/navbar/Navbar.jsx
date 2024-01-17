@@ -1,3 +1,4 @@
+import Button from "../button/Button";
 import { RiShoppingCartLine } from "@remixicon/react";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
@@ -19,9 +20,10 @@ const Navbar = () => {
             <a href="">Contact</a>
           </li>
         </ul>
-        <div className={styles.login_container}>
-          <button>Register</button>
-          <button>Login</button>
+        <div className={styles.btn_container}>
+          <Button className={styles.btn}>Register</Button>
+          <Button className={styles.btn}>Login</Button>
+
           <RiShoppingCartLine />
         </div>
       </nav>

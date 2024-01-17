@@ -1,5 +1,6 @@
 .container {
   height: 80vh;
+  width: 100%;
   background-image: url("../../assets/images/slide1.jpg");
   background-position: center;
   background-repeat: no-repeat;

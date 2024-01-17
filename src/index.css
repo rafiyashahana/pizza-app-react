@@ -15,7 +15,7 @@
   scroll-behavior: smooth;
   color: var(--darker);
 }
-.container {
+/* .container {
   width: var(--max-width);
   margin: 0 auto;
-}
+} */
