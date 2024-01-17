@@ -5,4 +5,8 @@
 .container p {
   color: var(--dark);
   font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
 }
