@@ -1,0 +1,17 @@
+.container {
+  padding: 1.5rem;
+  text-align: center;
+}
+.container h3 {
+  color: var(--dark);
+}
+
+.container h2 {
+  color: var(--red);
+}
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}

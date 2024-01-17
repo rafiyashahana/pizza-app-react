@@ -1,9 +1,11 @@
 import Button from "../button/Button";
 import styles from "./Hero.module.css";
+import Navbar from "../navbar/Navbar";
 import { RiArrowRightDoubleLine } from "@remixicon/react";
 const Hero = () => {
   return (
     <div className={styles.container}>
+      <Navbar />
       <div className={styles.left}>
         <h1>
           Everything <br />

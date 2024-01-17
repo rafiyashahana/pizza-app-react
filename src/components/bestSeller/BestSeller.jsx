@@ -1,7 +1,15 @@
+import Card from "../card/Card";
+import styles from "./BestSeller.module.css";
 const BestSeller = () => {
   return (
-    <div>
-      <h1>BestSeller</h1>
+    <div className={styles.container}>
+      <h3>CHECK OUT </h3>
+      <h2>Our Best Sellers</h2>
+      <div className={styles.card_container}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 };
