@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+nav h1 {
+  font-size: 2.5rem;
+  color: var(--red);
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

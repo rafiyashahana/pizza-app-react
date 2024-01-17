@@ -13,9 +13,9 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  color: var(--darker);
 }
 .container {
   width: var(--max-width);
-  border: solid red;
   margin: 0 auto;
 }
