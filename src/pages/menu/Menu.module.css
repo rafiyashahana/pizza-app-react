@@ -1,0 +1,19 @@
+.container {
+  padding: 1rem 1.5rem;
+  background-color: rgba(220, 220, 220, 0.5);
+  height: 100vh;
+}
+.container h3 {
+  font-weight: 500;
+}
+.pizza_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+.card img {
+  height: 150px;
+  width: 100%;
+}
