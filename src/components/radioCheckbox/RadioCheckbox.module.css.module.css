@@ -1,0 +1,13 @@
+.inp_container {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.inp {
+  color: red;
+}
+.radioCheck_label {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--dark);
+}

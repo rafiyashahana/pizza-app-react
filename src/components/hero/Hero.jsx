@@ -2,6 +2,9 @@ import Button from "../button/Button";
 import styles from "./Hero.module.css";
 import Navbar from "../navbar/Navbar";
 import { RiArrowRightDoubleLine } from "@remixicon/react";
+// import Customize from "../customize/Customize";
+// import Register from "../../pages/register/Register";
+// import Login from "../../pages/login/Login";
 const Hero = () => {
   return (
     <div className={styles.container}>
@@ -21,6 +24,9 @@ const Hero = () => {
           <RiArrowRightDoubleLine color="#fff" />
         </Button>
       </div>
+      {/* <Customize /> */}
+      {/* <Register />
+      <Login /> */}
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import Button from "../button/Button";
-import Register from "../../pages/register/Register";
 import { RiShoppingCartLine } from "@remixicon/react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "./Navbar.module.css";
@@ -24,6 +23,7 @@ const Navbar = () => {
         </ul>
         <div className={styles.btn_container}>
           <Button className={styles.btn}>Register</Button>
+          {/* <h3>Hello, User</h3> */}
           <Button className={styles.btn}>Login</Button>
           <RiShoppingCartLine />
         </div>

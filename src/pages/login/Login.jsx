@@ -9,8 +9,8 @@ const Login = () => {
       <Modal className={styles.login_container}>
         <h1>Login</h1>
         <div className={styles.input_container}>
-          <Input placeholder="Email" />
-          <Input placeholder="Password" />
+          <Input className={styles.inp} placeholder="Email" />
+          <Input className={styles.inp} placeholder="Password" />
           <p className="error-msg"></p>
         </div>
         <Button className={styles.login_btn}>Login</Button>

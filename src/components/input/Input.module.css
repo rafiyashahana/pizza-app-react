@@ -1,14 +1,13 @@
-input {
-  width: 100%;
+.inp {
   outline: none;
   border: none;
   padding: 10px;
   border-radius: 7px;
   background-color: rgba(0, 0, 0, 0.1);
   color: var(--dark);
-  margin: 0.3rem auto;
+  width: 100%;
 }
-label {
+.inp_label {
   font-size: 14px;
   font-weight: 300;
   color: var(--dark);

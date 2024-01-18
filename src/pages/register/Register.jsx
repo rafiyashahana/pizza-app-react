@@ -9,9 +9,9 @@ const Register = () => {
       <Modal className={styles.register_container}>
         <h1>Register</h1>
         <div className={styles.input_container}>
-          <Input placeholder="Username" />
-          <Input placeholder="Email" />
-          <Input placeholder="Password" />
+          <Input className={styles.inp} placeholder="Username" />
+          <Input className={styles.inp} placeholder="Email" />
+          <Input className={styles.inp} placeholder="Password" />
         </div>
         <Button className={styles.reg_btn}>Register</Button>
         <p className="error-msg"></p>

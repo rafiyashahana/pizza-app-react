@@ -1,0 +1,22 @@
+.customize_container {
+  text-align: center;
+  overflow-y: scroll;
+  width: 400px;
+}
+
+.customize_container p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.customize_container img {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

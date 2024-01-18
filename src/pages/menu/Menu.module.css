@@ -3,8 +3,13 @@
   background-color: rgba(220, 220, 220, 0.5);
   height: 100vh;
 }
-.container h3 {
-  font-weight: 500;
+.card h4 {
+  font-weight: 600;
+  font-size: 14px;
+}
+.card p {
+  font-weight: 300;
+  font-size: 12px;
 }
 .pizza_container {
   display: grid;
