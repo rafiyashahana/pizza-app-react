@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import Register from "../../pages/register/Register";
 import { RiShoppingCartLine } from "@remixicon/react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "./Navbar.module.css";

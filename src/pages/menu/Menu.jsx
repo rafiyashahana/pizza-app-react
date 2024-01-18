@@ -2,6 +2,7 @@ import Card from "../../components/card/Card";
 import Button from "../../components/button/Button";
 import styles from "./Menu.module.css";
 import best2 from "../../assets/images/best2.jpeg";
+import Register from "../register/Register";
 
 const Menu = () => {
   return (
@@ -22,6 +23,7 @@ const Menu = () => {
         <Card></Card>
         <Card></Card>
       </div>
+      <Register />
     </div>
   );
 };
