@@ -1,5 +1,6 @@
 .container {
-  height: 200px;
-  background-color: var(--grey);
   border-radius: 0.2rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
