@@ -1,6 +1,12 @@
 .container {
   height: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 80vh;
+  width: 100%;
+  background-image: url("../../assets/images/slide1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .left {
   height: 100%;

@@ -5,7 +5,6 @@ import { RiArrowRightDoubleLine } from "@remixicon/react";
 const Hero = () => {
   return (
     <div className={styles.container}>
-      <Navbar />
       <div className={styles.left}>
         <h1>
           Everything <br />

@@ -1,5 +1,6 @@
 import Button from "../button/Button";
 import { RiShoppingCartLine } from "@remixicon/react";
+import { Link, Outlet } from "react-router-dom";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
@@ -8,25 +9,25 @@ const Navbar = () => {
         <h1>PizzaCo.</h1>
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">Menu</a>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className={styles.btn_container}>
           <Button className={styles.btn}>Register</Button>
           <Button className={styles.btn}>Login</Button>
-
           <RiShoppingCartLine />
         </div>
       </nav>
+      <Outlet />
     </>
   );
 };
