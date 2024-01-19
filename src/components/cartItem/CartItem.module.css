@@ -1,0 +1,21 @@
+.item_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5rem;
+}
+.item_container img {
+  width: 90px;
+}
+.item_price {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.3rem;
+  font-size: 14px;
+}
+
+.bin:hover {
+  cursor: pointer;
+  color: var(--light-red);
+}

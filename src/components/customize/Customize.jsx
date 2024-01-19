@@ -16,15 +16,17 @@ const Customize = () => {
         sint rem!
       </p>
       <h5>Pick your Size</h5>
-
-      <RadioCheckbox type="radio" label="Small $12" />
-      <RadioCheckbox type="radio" label="Medium $14" />
-      <RadioCheckbox type="radio" label="Large $16" />
+      <div className={styles.radioCheck_container}>
+        <RadioCheckbox type="radio" label="Small $12" />
+        <RadioCheckbox type="radio" label="Medium $14" />
+        <RadioCheckbox type="radio" label="Large $16" />
+      </div>
 
       <h5>Any Extras?</h5>
-      <RadioCheckbox type="checkbox" label="Extra Cheese +$1" />
-      <RadioCheckbox type="checkbox" label="Extra Pepperoni +$2" />
-
+      <div className={styles.radioCheck_container}>
+        <RadioCheckbox type="checkbox" label="Extra Cheese +$1" />
+        <RadioCheckbox type="checkbox" label="Extra Pepperoni +$2" />
+      </div>
       <Button> Add to Cart</Button>
     </Modal>
   );
