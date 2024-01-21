@@ -1,12 +1,23 @@
+import { useState } from "react";
 import styles from "./CartSlider.module.css";
 import Button from "../button/Button";
 import { RiCloseLine } from "@remixicon/react";
 import CartItem from "../cartItem/CartItem";
 
 const CartSlider = () => {
+  const [showSlider, setShowSlider] = useState(true);
+  const handleClick = () => {
+    setShowSlider(false);
+  };
   return (
-    <div className={styles.cart_container}>
-      <div className={styles.close}>
+    <div
+      className={
+        showSlider
+          ? `${styles.cart_container}`
+          : `${styles.cart_container} ${styles.hideSlider}`
+      }
+    >
+      <div className={styles.close} onClick={() => handleClick()}>
         <RiCloseLine />
       </div>
       <div className={styles.cart_content}>

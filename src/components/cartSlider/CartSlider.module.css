@@ -33,3 +33,28 @@
   margin: 0 auto;
   width: 100%;
 }
+.hideSlider {
+  animation: slideOut 1s ease-in-out forwards;
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+    display: none;
+  }
+}
+
+.showSlider {
+  animation: SlideIn 1s ease-in-out forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+    /* display: none; */
+  }
+}
