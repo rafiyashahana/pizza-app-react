@@ -26,3 +26,20 @@ a {
   align-items: center;
   gap: 0.7rem;
 }
+
+.cartIcon {
+  cursor: pointer;
+  position: relative;
+}
+
+.cartIcon span {
+  position: absolute;
+  background-color: var(--red);
+  padding: 0.2rem;
+  border-radius: 2rem;
+  font-size: 0.35rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  text-align: center;
+  color: #fff;
+}

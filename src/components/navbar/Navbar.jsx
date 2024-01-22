@@ -26,24 +26,26 @@ const Navbar = () => {
           <li>
             <Link to="/menu">Menu</Link>
           </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
+
           <li>
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <div className={styles.btn_container}>
-          <Button className={styles.btn} onClick={() => handleRegister()}>
+          <Button className={styles.btn} onClick={handleRegister}>
             Register
           </Button>
-          {showRegister && <Register onClose={() => setShowRegister(false)} />}
           {/* <h3>Hello, User</h3> */}
           <Button className={styles.btn} onClick={handleLogin}>
             Login
           </Button>
+          <div className={styles.cartIcon}>
+            <RiShoppingCartLine onClick={handleShowCartSlider} />
+            <span>0</span>
+          </div>
+
+          {showRegister && <Register onClose={() => setShowRegister(false)} />}
           {showLogin && <Login onClose={() => setShowLogin(false)} />}
-          <RiShoppingCartLine onClick={handleShowCartSlider} />
           {showCartSlider && (
             <CartSlider isOpen={() => setShowCartSlider(false)} />
           )}
