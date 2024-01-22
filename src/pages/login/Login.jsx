@@ -3,10 +3,14 @@ import Modal from "../../components/modal/Modal";
 import Input from "../../components/input/Input";
 import Button from "../../components/button/Button";
 
-const Login = () => {
+const Login = ({ onClose }) => {
   return (
     <div>
-      <Modal className={styles.login_container}>
+      <Modal
+        className={styles.login_container}
+        contentStyle={styles.content_container}
+        onClose={onClose}
+      >
         <h1>Login</h1>
         <div className={styles.input_container}>
           <Input className={styles.inp} placeholder="Email" />

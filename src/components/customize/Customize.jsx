@@ -4,9 +4,13 @@ import Modal from "../modal/Modal";
 import styles from "./Customize.module.css";
 import best4 from "../../assets/images/best4.png";
 
-const Customize = () => {
+const Customize = ({ onClose }) => {
   return (
-    <Modal className={styles.customize_container} contentStyle={styles.content}>
+    <Modal
+      className={styles.customize_container}
+      contentStyle={styles.content}
+      onClose={onClose}
+    >
       <img src={best4} alt="pzza_img" />
       <h3>Spicy Ranch </h3>
       <p>

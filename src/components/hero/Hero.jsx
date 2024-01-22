@@ -1,11 +1,14 @@
 import Button from "../button/Button";
+import { useNavigate } from "react-router-dom";
 import styles from "./Hero.module.css";
 import Navbar from "../navbar/Navbar";
 import { RiArrowRightDoubleLine } from "@remixicon/react";
 import Customize from "../customize/Customize";
 import Register from "../../pages/register/Register";
 import Login from "../../pages/login/Login";
+
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -19,7 +22,7 @@ const Hero = () => {
           delicious joy in life
         </p>
 
-        <Button>
+        <Button onClick={() => navigate("/menu")}>
           Order Now
           <RiArrowRightDoubleLine color="#fff" />
         </Button>

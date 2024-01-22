@@ -1,10 +1,16 @@
+import { useState } from "react";
 import Card from "../../components/card/Card";
 import Button from "../../components/button/Button";
 import styles from "./Menu.module.css";
 import best2 from "../../assets/images/best2.jpeg";
-import CartSlider from "../../components/cartSlider/CartSlider";
+
+import Customize from "../../components/customize/Customize";
 
 const Menu = () => {
+  const [showCustomize, setShowCustomize] = useState(false);
+  const handleClick = () => {
+    setShowCustomize(!showCustomize);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.pizza_container}>
@@ -12,8 +18,11 @@ const Menu = () => {
           <img src={best2} />
           <h4>Cheesy Pepperoni Pizza</h4>
           <p>Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives</p>
-          <Button className={styles.btn}>Add to cart (from $12)</Button>
+          <Button onClick={handleClick} className={styles.btn}>
+            Add to cart (from $12)
+          </Button>
         </Card>
+        {showCustomize && <Customize onClose={() => setShowCustomize(false)} />}
 
         <Card></Card>
         <Card></Card>
@@ -24,7 +33,6 @@ const Menu = () => {
         <Card></Card>
         <Card></Card>
       </div>
-      <CartSlider />
     </div>
   );
 };

@@ -1,20 +1,27 @@
 import { useState } from "react";
 import styles from "./Modal.module.css";
 import { RiCloseLine } from "@remixicon/react";
-const Modal = ({ className, children, props, contentStyle }) => {
+const Modal = ({ className, children, onClose, contentStyle }) => {
   const [showModal, setShowModal] = useState(true);
-  const handleClick = (e) => {
+
+  const handleClick = () => {
     setShowModal(false);
+    if (onClose) onClose();
   };
+
   return (
-    <div className={showModal ? `${styles.overlay}` : `${styles.hideModal}`}>
-      <div className={`${styles.container} ${className}  `} {...props}>
-        <div className={styles.close} onClick={(e) => handleClick(e)}>
-          <RiCloseLine />
+    showModal && (
+      <div className={`${styles.overlay}`}>
+        <div className={`${styles.modal} ${className}  `}>
+          <div className={styles.close} onClick={handleClick}>
+            <RiCloseLine />
+          </div>
+          <div className={`{${styles.content} ${contentStyle} `}>
+            {children}
+          </div>
         </div>
-        <div className={`{${styles.content} ${contentStyle} `}>{children}</div>
       </div>
-    </div>
+    )
   );
 };
 

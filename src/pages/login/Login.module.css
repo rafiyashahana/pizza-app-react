@@ -28,3 +28,6 @@
 .login_container a:hover {
   color: var(--light-red);
 }
+.content_container {
+  padding-top: 2rem;
+}
