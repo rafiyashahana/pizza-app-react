@@ -3,6 +3,7 @@ import Card from "../../components/card/Card";
 import Button from "../../components/button/Button";
 import styles from "./Menu.module.css";
 import best2 from "../../assets/images/best2.jpeg";
+import { pizzaMenu } from "../../pizzaMenu";
 
 import Customize from "../../components/customize/Customize";
 
@@ -14,24 +15,20 @@ const Menu = () => {
   return (
     <div className={styles.container}>
       <div className={styles.pizza_container}>
-        <Card className={styles.card}>
-          <img src={best2} />
-          <h4>Cheesy Pepperoni Pizza</h4>
-          <p>Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives</p>
-          <Button onClick={handleClick} className={styles.btn}>
-            Add to cart (from $12)
-          </Button>
-        </Card>
-        {showCustomize && <Customize onClose={() => setShowCustomize(false)} />}
+        {pizzaMenu.map((pizza) => {
+          return (
+            <Card key={pizza.id} className={styles.card}>
+              <img src={pizza.img} />
+              <h4>{pizza.name}</h4>
+              <p>{pizza.desc}</p>
+              <Button onClick={handleClick} className={styles.btn}>
+                Add to cart (from ${pizza.price})
+              </Button>
+            </Card>
+          );
+        })}
 
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        {showCustomize && <Customize onClose={() => setShowCustomize(false)} />}
       </div>
     </div>
   );

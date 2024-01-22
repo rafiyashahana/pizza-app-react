@@ -37,9 +37,11 @@ a {
   background-color: var(--red);
   padding: 0.2rem;
   border-radius: 2rem;
-  font-size: 0.35rem;
+  font-size: 0.4rem;
   width: 0.8rem;
-  height: 0.8rem;
+  /* height: 0.8rem; */
   text-align: center;
   color: #fff;
+  left: 70%;
+  top: -22%;
 }

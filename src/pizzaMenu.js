@@ -1,0 +1,67 @@
+export const pizzaMenu = [
+  {
+    id: 1,
+    name: "Original Ranchy",
+    desc: "Maestro Cheese, Grilled Chicken, Ranch Swirl",
+    price: 12,
+    img: require("./assets/images/menu1.png"),
+  },
+
+  {
+    id: 2,
+    name: "Steak and Cheese",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 18,
+    img: require("./assets/images/menu8.png"),
+  },
+  {
+    id: 3,
+    name: "Classic Margherita",
+    desc: " Cheese, Onion, Green Pepper, Kickers, Ranch Swirl, Dynamite Swirl",
+    price: 12,
+    img: require("./assets/images/menu3.png"),
+  },
+  {
+    id: 4,
+    name: "Pepperoni Pizza",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 16,
+    img: require("./assets/images/menu4.png"),
+  },
+  {
+    id: 5,
+    name: "Grilled Chicken ",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 13,
+    img: require("./assets/images/menu5.png"),
+  },
+  {
+    id: 6,
+    name: "Cheesy Pesto",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 12,
+    img: require("./assets/images/menu6.png"),
+  },
+  {
+    id: 7,
+    name: "BBQ Grilled Chicken",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 18,
+    img: require("./assets/images/menu7.png"),
+  },
+  {
+    id: 8,
+    name: "Ranchy Dynamite",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 14,
+    img: require("./assets/images/menu2.png"),
+  },
+  ,
+  {
+    id: 9,
+    name: "Jalapeneo Ranchy",
+    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    price: 14,
+    img: require("./assets/images/menu9.png"),
+  },
+];
