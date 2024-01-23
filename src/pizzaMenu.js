@@ -2,7 +2,7 @@ export const pizzaMenu = [
   {
     id: 1,
     name: "Original Ranchy",
-    desc: "Maestro Cheese, Grilled Chicken, Ranch Swirl",
+    desc: "Cheese Mix, Tomato, Olive, Onion, Green Pepper, Mushroom",
     price: 12,
     img: require("./assets/images/menu1.png"),
   },
@@ -45,7 +45,7 @@ export const pizzaMenu = [
   {
     id: 7,
     name: "BBQ Grilled Chicken",
-    desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
+    desc: "Ranch Sauce, Cheese Mix, Grilled Chicken, Onion, BBQ Swirl",
     price: 18,
     img: require("./assets/images/menu7.png"),
   },

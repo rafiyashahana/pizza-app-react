@@ -1,36 +1,32 @@
+import { useState } from "react";
 import Button from "../button/Button";
 import Card from "../card/Card";
-import best1 from "../../assets/images/best1.jpeg";
-import best2 from "../../assets/images/best2.jpeg";
-import best4 from "../../assets/images/best4.jpeg";
-import { RiArrowDownDoubleLine } from "@remixicon/react";
+import { pizzaMenu } from "../../pizzaMenu";
 import styles from "./BestSeller.module.css";
+import Customize from "../customize/Customize";
 const BestSeller = () => {
+  const [showCustomize, setShowCustomize] = useState(false);
+  const handleClick = () => {
+    setShowCustomize(!showCustomize);
+  };
   return (
     <div className={styles.container}>
       <h3>CHECK OUT </h3>
       <h2>Our Best Sellers</h2>
       <div className={styles.card_container}>
-        <Card className={styles.card}>
-          <img src={best2} />
-          <h4>Cheesy Pepperoni Pizza</h4>
-          <p>Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives</p>
-          <Button className={styles.btn}>Add to cart (from $12)</Button>
-        </Card>
-
-        <Card className={styles.card}>
-          <img src={best1} />
-          <h4>Vegetarian Pizza</h4>
-          <p> Cheese Mix, Tomato, Olive, Onion, Green Pepper, Mushroom</p>
-          <Button className={styles.btn}>Add to cart $13</Button>
-        </Card>
-
-        <Card className={styles.card}>
-          <img src={best4} />
-          <h4>Spicy BBQ Pizza</h4>
-          <p>Ranch Sauce, Cheese Mix, Grilled Chicken, Onion, BBQ Swirl</p>
-          <Button className={styles.btn}>Add to cart (from $14)</Button>
-        </Card>
+        {pizzaMenu.slice(Math.max(pizzaMenu.length - 4)).map((pizza) => {
+          return (
+            <Card key={pizza.id} className={styles.card}>
+              <img src={pizza.img} />
+              <h4>{pizza.name}</h4>
+              <p>{pizza.desc}</p>
+              <Button className={styles.btn} onClick={handleClick}>
+                Add to cart (from ${pizza.price})
+              </Button>
+            </Card>
+          );
+        })}
+        {showCustomize && <Customize onClose={() => setShowCustomize(false)} />}
       </div>
     </div>
   );

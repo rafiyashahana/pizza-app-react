@@ -4,4 +4,3 @@ const Card = ({ children, className }) => {
 };
 
 export default Card;
-<div></div>;

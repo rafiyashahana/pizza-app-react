@@ -1,5 +1,6 @@
 import About from "../../components/about/About";
 import Contact from "../../components/contact/Contact";
+import Menu from "../../pages/menu/Menu";
 import BestSeller from "../../components/bestSeller/BestSeller";
 import styles from "./Home.module.css";
 import Footer from "../../components/footer/Footer";
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <BestSeller />
       <About />
+      <Menu />
       <Contact />
       <Footer />
     </div>
