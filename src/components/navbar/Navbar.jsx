@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Button from "../button/Button";
 import Register from "../../pages/register/Register";
 import { RiShoppingCartLine } from "@remixicon/react";
@@ -6,10 +6,12 @@ import { Link, Outlet } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Login from "../../pages/login/Login";
 import CartSlider from "../../components/cartSlider/CartSlider";
+import { CartContext } from "../../contexts/cart.context";
 const Navbar = () => {
   const [showRegister, setShowRegister] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showCartSlider, setShowCartSlider] = useState(false);
+  const { state } = useContext(CartContext);
 
   const handleRegister = () => setShowRegister(!showRegister);
   const handleLogin = () => setShowLogin(!showLogin);
@@ -41,7 +43,7 @@ const Navbar = () => {
           </Button>
           <div className={styles.cartIcon}>
             <RiShoppingCartLine onClick={handleShowCartSlider} />
-            <span>0</span>
+            <span>{state.cart.length}</span>
           </div>
 
           {showRegister && <Register onClose={() => setShowRegister(false)} />}

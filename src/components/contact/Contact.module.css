@@ -1,5 +1,5 @@
 .container {
-  padding: 5rem;
+  padding: 1rem 5rem;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -34,4 +34,16 @@
   outline: none;
   border: none;
   padding: 10px;
+}
+.header h3 {
+  color: var(--dark);
+}
+
+.header h2 {
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+.header {
+  text-align: center;
+  margin: 5rem auto;
 }

@@ -3,7 +3,7 @@
   background-color: rgba(220, 220, 220, 0.5);
   height: 100%;
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 3.35rem auto;
   text-align: center;
 }
 .card h4 {

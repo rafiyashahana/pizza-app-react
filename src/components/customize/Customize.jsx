@@ -2,10 +2,12 @@ import Button from "../button/Button";
 import RadioCheckbox from "../radioCheckbox/RadioCheckbox";
 import Modal from "../modal/Modal";
 import styles from "./Customize.module.css";
-import best4 from "../../assets/images/best4.png";
-import { pizzaMenu } from "../../pizzaMenu";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/cart.context";
 
 const Customize = ({ pizza, onClose }) => {
+  const { state, dispatch } = useContext(CartContext);
+  console.log(state.cart);
   return (
     <Modal
       className={styles.customize_container}
@@ -28,7 +30,15 @@ const Customize = ({ pizza, onClose }) => {
           <RadioCheckbox type="checkbox" label="Extra Cheese +$1" />
           <RadioCheckbox type="checkbox" label="Extra Pepperoni +$2" />
         </div>
-        <Button className={styles.btn}> Add to Cart ${pizza.price}</Button>
+        <Button
+          className={styles.btn}
+          onClick={() => {
+            dispatch({ type: "ADD_TO_CART", payload: pizza });
+          }}
+        >
+          {" "}
+          Add to Cart ${pizza.price}
+        </Button>
       </div>
     </Modal>
   );
