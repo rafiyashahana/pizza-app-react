@@ -17,5 +17,17 @@
 
 .bin:hover {
   cursor: pointer;
-  color: var(--light-red);
+  fill: var(--red);
+}
+
+.item_price p {
+  width: 80px;
+  font-size: 12px;
+  color: var(--darker);
+}
+.bin {
+  width: 20px;
+  margin-left: -1rem;
+  fill: var(--grey);
+  size: 12px;
 }
