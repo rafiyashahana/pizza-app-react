@@ -8,9 +8,13 @@ import Customize from "../../components/customize/Customize";
 
 const Menu = () => {
   const [showCustomize, setShowCustomize] = useState(false);
+  const [selectedPizza, setSelectedPizza] = useState(null);
+
   const { state } = useContext(CartContext);
-  const handleClick = () => {
+  const handleClick = (e, pizza) => {
+    e.preventDefault();
     setShowCustomize(!showCustomize);
+    setSelectedPizza(pizza);
   };
   return (
     <div className={styles.container}>
@@ -23,14 +27,23 @@ const Menu = () => {
               <img src={pizza.img} />
               <h4>{pizza.name}</h4>
               <p>{pizza.desc}</p>
-              <Button onClick={handleClick} className={styles.btn}>
+              <Button
+                onClick={(e) => handleClick(e, pizza)}
+                className={styles.btn}
+                value={pizza.id}
+              >
                 Add to cart (from ${pizza.price})
               </Button>
             </Card>
           );
         })}
 
-        {showCustomize && <Customize onClose={() => setShowCustomize(false)} />}
+        {showCustomize && (
+          <Customize
+            pizza={selectedPizza}
+            onClose={() => setShowCustomize(false)}
+          />
+        )}
       </div>
     </div>
   );
