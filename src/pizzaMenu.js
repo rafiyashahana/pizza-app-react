@@ -3,7 +3,7 @@ export const pizzaMenu = [
     id: 1,
     name: "Original Ranchy",
     desc: "Cheese Mix, Tomato, Olive, Onion, Green Pepper, Mushroom",
-    price: 12,
+    price: 12.65,
     img: require("./assets/images/menu1.png"),
   },
 
@@ -11,14 +11,14 @@ export const pizzaMenu = [
     id: 2,
     name: "Steak and Cheese",
     desc: "Tomato sauce, mozzarella, oregano, pepperoni, cheese, olives",
-    price: 18,
+    price: 18.85,
     img: require("./assets/images/menu8.png"),
   },
   {
     id: 3,
     name: "Classic Margherita",
     desc: " Cheese, Onion, Green Pepper, Kickers, Ranch Swirl, Dynamite Swirl",
-    price: 12,
+    price: 12.5,
     img: require("./assets/images/menu3.png"),
   },
   {
