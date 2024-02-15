@@ -27,3 +27,22 @@
   margin: 1rem auto;
   /* width: 100%; */
 }
+
+@media screen and (max-width: 730px) {
+  .card img {
+    height: 90px;
+    width: 90px;
+  }
+  .card p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin: 0 3rem;
+  }
+}
