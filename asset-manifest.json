@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6dac7f70.css",
-    "main.js": "/static/js/main.c7f3168d.js",
-    "static/media/slide1.jpg": "/static/media/slide1.69922a7ed4034cdaa8e5.jpg",
-    "static/media/menu3.png": "/static/media/menu3.614821fcada2fe0c7ea7.png",
-    "static/media/menu9.png": "/static/media/menu9.a0aaa7b5ed175b4caafa.png",
-    "static/media/menu1.png": "/static/media/menu1.065117f7a8b17da8d01f.png",
-    "static/media/menu6.png": "/static/media/menu6.8f4ba495ce7d3c4b2e4e.png",
-    "static/media/menu2.png": "/static/media/menu2.33f5dbce5ed520e78f4f.png",
-    "static/media/menu7.png": "/static/media/menu7.900c65ed4dbaf901b606.png",
-    "static/media/menu8.png": "/static/media/menu8.b2248f041d533d4e5adb.png",
-    "static/media/menu4.png": "/static/media/menu4.86473eb24ab69a4abbe5.png",
-    "static/media/menu5.png": "/static/media/menu5.2e8d20f943c1d744bef4.png",
-    "index.html": "/index.html",
-    "main.6dac7f70.css.map": "/static/css/main.6dac7f70.css.map",
-    "main.c7f3168d.js.map": "/static/js/main.c7f3168d.js.map"
+    "main.css": "/pizza-app-react/static/css/main.44d92557.css",
+    "main.js": "/pizza-app-react/static/js/main.64c024fd.js",
+    "static/media/slide1.jpg": "/pizza-app-react/static/media/slide1.69922a7ed4034cdaa8e5.jpg",
+    "static/media/menu3.png": "/pizza-app-react/static/media/menu3.614821fcada2fe0c7ea7.png",
+    "static/media/menu9.png": "/pizza-app-react/static/media/menu9.a0aaa7b5ed175b4caafa.png",
+    "static/media/menu1.png": "/pizza-app-react/static/media/menu1.065117f7a8b17da8d01f.png",
+    "static/media/menu6.png": "/pizza-app-react/static/media/menu6.8f4ba495ce7d3c4b2e4e.png",
+    "static/media/menu2.png": "/pizza-app-react/static/media/menu2.33f5dbce5ed520e78f4f.png",
+    "static/media/menu7.png": "/pizza-app-react/static/media/menu7.900c65ed4dbaf901b606.png",
+    "static/media/menu8.png": "/pizza-app-react/static/media/menu8.b2248f041d533d4e5adb.png",
+    "static/media/menu4.png": "/pizza-app-react/static/media/menu4.86473eb24ab69a4abbe5.png",
+    "static/media/menu5.png": "/pizza-app-react/static/media/menu5.2e8d20f943c1d744bef4.png",
+    "index.html": "/pizza-app-react/index.html",
+    "main.44d92557.css.map": "/pizza-app-react/static/css/main.44d92557.css.map",
+    "main.64c024fd.js.map": "/pizza-app-react/static/js/main.64c024fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dac7f70.css",
-    "static/js/main.c7f3168d.js"
+    "static/css/main.44d92557.css",
+    "static/js/main.64c024fd.js"
   ]
 }
